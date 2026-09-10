@@ -1,0 +1,56 @@
+{
+  "name": "react-ts-app",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "server": "tsx src/server/server.ts",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdxeditor/editor": "^4.0.4",
+    "bcrypt": "^6.0.0",
+    "bootstrap": "^5.3.8",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "lucide-react": "^1.24.0",
+    "multer": "^2.2.0",
+    "mysql2": "^3.22.5",
+    "navbar": "^3.0.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/express-session": "^1.19.0",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^26.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.5.2",
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14",
+    "postcss": "^8.5.16",
+    "prettier": "3.9.6",
+    "tailwindcss": "^4.3.2",
+    "tsx": "^4.22.4",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true,
+    "esbuild@0.28.1": true,
+    "bcrypt@6.0.0": true
+  }
+}

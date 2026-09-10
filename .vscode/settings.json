@@ -1,0 +1,6 @@
+{
+  "better-todo-tree.tree.disableCompactFolders": true,
+  "better-todo-tree.tree.showBadges": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

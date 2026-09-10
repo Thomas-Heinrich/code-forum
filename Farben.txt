@@ -1,0 +1,7 @@
+Buttons: bg-red-600
+Buttons:hover: bg-red-700
+Buttons:activ: bg-red-500
+
+Navbar: bg-gray-300
+
+Backround: White
