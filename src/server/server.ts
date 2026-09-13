@@ -16,10 +16,16 @@ const PORT = 4000;
 
 app.use(
   cors({
-    origin: ['http://10.83.193.115:5173', 'http://localhost:5173'],
+    origin: ['http://192.168.178.116:5173', 'http://localhost:5173'],
     credentials: true,
   }),
 );
+
+app.use((req, res, next) => {
+  console.log('Origin:', req.headers.origin);
+  console.log('CORS header:', res.getHeader('Access-Control-Allow-Origin'));
+  next();
+});
 app.use(express.json());
 
 const uploadDir = path.resolve('public/user_img');
@@ -88,7 +94,7 @@ async function startServer() {
 
     // --- Projects ---
 
-    app.get('/api/allprojects', async (_req: Request, res: Response) => {
+    app.get('/api/allProjects', async (_req: Request, res: Response) => {
       const [projects] = await connection.execute('SELECT * FROM projects');
       res.json(projects);
     });
