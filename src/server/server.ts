@@ -10,15 +10,18 @@ import session from 'express-session';
 import { RowDataPacket } from 'mysql2';
 import { connect } from 'http2';
 import { Select } from '@mdxeditor/editor';
+import { mysqlip } from '../components/ip.ts'
+
+console.log("server ip = " + mysqlip)
 
 const app = express();
 const PORT = 4000;
 
 app.use(
   cors({
-    origin: ['http://192.168.178.116:5173', 'http://localhost:5173'],
-    credentials: true,
-  }),
+      origin: [`http://${mysqlip}`, 'http://localhost:5173'],
+      credentials: true,
+    }),
 );
 
 app.use((req, res, next) => {
